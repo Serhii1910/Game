@@ -1,0 +1,58 @@
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+main {
+    margin: 0 auto;
+    max-width: 768px;
+    max-height: 100vh;
+    background: grey;
+}
+.control-wrapper {
+height: 100px;
+background: green;
+position: relative;
+    h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+}
+.game-area {
+    position: relative;
+    height: calc(100% - 100px);
+    .use-zone {
+        height: 100px;
+        background: beige;
+    }
+    .enemy {
+        height: calc(100% - 100px);
+        background: greenyellow;
+        position: relative;
+    }
+    #cat {
+        font-size: 70px;
+        cursor: pointer;
+    }
+    i {
+        font-size: 25px;
+    }
+}
+.user {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%);
+}
+.enemy {
+    cursor: move;
+    height: calc(100% - 100px);
+    background: grey;
+    position: relative;
+    i {
+        font-size: 25px;
+        position: absolute;
+    }
+}
